@@ -1,0 +1,8 @@
+# dsh-schedule-send — mount the composer schedule-send plugin over any shipped
+# Web composition. The package carries both the Host half (`./index.js`, which
+# owns the durable queue, the two session commands, and delivery) and the
+# browser half (`./client.js`, which renders the composer control and the
+# command cards).
+- insert:
+    - id: dsh-schedule-send
+      name: dsh-schedule-send

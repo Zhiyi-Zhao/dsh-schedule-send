@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Schedule Send",
+    "description": "Schedule the message you are writing from the composer; it is delivered into the same conversation later as a normal user message."
+  }
+}

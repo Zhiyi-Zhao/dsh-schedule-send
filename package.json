@@ -1,0 +1,63 @@
+{
+  "name": "dsh-schedule-send",
+  "version": "0.1.0",
+  "description": "Schedule-send from the DeepSeek Harness composer: write a message now and have it delivered into the same conversation later as a normal user message.",
+  "license": "MIT",
+  "author": "Zhiyi Zhao",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "schedule-send",
+    "composer",
+    "cordis",
+    "ai-agent",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhiyi-Zhao/dsh-schedule-send.git"
+  },
+  "homepage": "https://github.com/Zhiyi-Zhao/dsh-schedule-send#readme",
+  "bugs": {
+    "url": "https://github.com/Zhiyi-Zhao/dsh-schedule-send/issues"
+  },
+  "engines": {
+    "node": "^22.19 || >=24"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "verify": "node --check index.js && node --check client.js && node scripts/verify.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
