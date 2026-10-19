@@ -41,6 +41,12 @@ dsh plugin --profile desktop add ./dsh-schedule-send-0.1.0.tgz
 dsh plugin --profile desktop add github:Zhiyi-Zhao/dsh-schedule-send
 ```
 
+`dsh web` profile 用同样的 spec，把 profile 换成 `web`：
+
+```sh
+dsh plugin --profile web add github:Zhiyi-Zhao/dsh-schedule-send
+```
+
 ### 方式 3：从本地目录安装
 
 ```sh

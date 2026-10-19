@@ -41,6 +41,12 @@ dsh plugin --profile desktop add ./dsh-schedule-send-0.1.0.tgz
 dsh plugin --profile desktop add github:Zhiyi-Zhao/dsh-schedule-send
 ```
 
+A `dsh web` profile uses the same spec with `--profile web`:
+
+```sh
+dsh plugin --profile web add github:Zhiyi-Zhao/dsh-schedule-send
+```
+
 ### Option 3: from a local checkout
 
 ```sh
