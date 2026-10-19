@@ -82,6 +82,20 @@ The card stays in the transcript as history. After delivery, Cancel reports that
 | Deliver | Host | That public method resumes the session if needed and submits a normal user message; the send id is the dedupe key, so retries are idempotent. |
 | Feedback | Browser | The command lifecycle renders as the persistent card through a `conversation.chat.commandview` renderer keyed by the command name. |
 
+## Verified delivery
+
+One real scheduled send, read back from the Host queue (local time, Europe/Copenhagen):
+
+| Field | Value |
+|---|---|
+| status | `delivered` |
+| created | 2026-10-19 12:22:16 |
+| target | 2026-10-19 12:24:00 |
+| delivered | 2026-10-19 12:24:03 |
+| delay | 3.2 s (inside the 5 s sweep interval) |
+
+The delivered text appeared in the conversation as a normal user message and the agent answered it there.
+
 ## Limits
 
 - **The app must be running when the send comes due.** DSH has no background scheduler; if the app is closed, the message is delivered shortly after the next start (catch-up). A closed app cannot send.
