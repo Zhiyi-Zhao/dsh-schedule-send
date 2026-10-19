@@ -52,6 +52,8 @@ dsh plugin --profile desktop add /absolute/path/to/dsh-schedule-send
 
 打开侧边栏 **Plugins** 页面，选择安装 bundle，粘贴上面的 spec（`github:Zhiyi-Zhao/dsh-schedule-send`、tarball 地址或绝对路径）。从运行中的应用里安装需要 `danger-full-access` 权限或当次审批。
 
+> `--profile desktop` 是桌面应用的 profile 名；`dsh web` 部署使用 `--profile web`。只要 profile 组合了 Web 客户端，这个 bundle 就能用。把下文命令里的 `desktop` 换成你的 profile 名即可。
+
 安装到 desktop profile 后，新 bundle 可能通过 HMR 立刻生效；若没有出现，重启 DeepSeek Harness。卸载：
 
 ```sh

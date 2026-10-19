@@ -52,6 +52,8 @@ dsh plugin --profile desktop add /absolute/path/to/dsh-schedule-send
 
 Open the sidebar's **Plugins** page, choose to install a bundle, and paste one of the specs above (`github:Zhiyi-Zhao/dsh-schedule-send`, a tarball URL, or an absolute path). Installing from the running app needs `danger-full-access` permission or an approval.
 
+> `--profile desktop` names the desktop app's profile. A `dsh web` deployment uses `--profile web`; the bundle works in any profile that composes the Web client. Replace `desktop` with your profile name in every command below.
+
 After installing into the desktop profile, the new bundle can apply through HMR; if it does not appear, restart DeepSeek Harness. Uninstall with:
 
 ```sh
