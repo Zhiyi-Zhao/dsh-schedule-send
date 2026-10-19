@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![DeepSeek Harness plugin](https://img.shields.io/badge/DeepSeek%20Harness-plugin-4B6BFB.svg)](https://github.com/deepseek-ai/deepseek-harness)
 [![Release](https://img.shields.io/github/v/release/Zhiyi-Zhao/dsh-schedule-send?label=release)](https://github.com/Zhiyi-Zhao/dsh-schedule-send/releases)
+[![verify](https://github.com/Zhiyi-Zhao/dsh-schedule-send/actions/workflows/verify.yml/badge.svg)](https://github.com/Zhiyi-Zhao/dsh-schedule-send/actions/workflows/verify.yml)
 
 给 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 的输入框加一个「定时发送」：现在写好内容、选一个时间，到点后这段文字会**以普通用户消息**的身份发进**同一个会话**——等同于你在那个时刻按下了发送，agent 会正常回复并继续对话。
 

@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![DeepSeek Harness plugin](https://img.shields.io/badge/DeepSeek%20Harness-plugin-4B6BFB.svg)](https://github.com/deepseek-ai/deepseek-harness)
 [![Release](https://img.shields.io/github/v/release/Zhiyi-Zhao/dsh-schedule-send?label=release)](https://github.com/Zhiyi-Zhao/dsh-schedule-send/releases)
+[![verify](https://github.com/Zhiyi-Zhao/dsh-schedule-send/actions/workflows/verify.yml/badge.svg)](https://github.com/Zhiyi-Zhao/dsh-schedule-send/actions/workflows/verify.yml)
 
 Schedule-send for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness): write a message in the composer, pick a time, and the text is delivered into the **same conversation** later as a **normal user message** — exactly as if you had pressed Send at that moment, so the agent answers it and the thread continues.
 
